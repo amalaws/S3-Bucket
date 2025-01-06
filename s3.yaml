@@ -1,0 +1,23 @@
+Parameters:
+ bucketname1:
+  Description: "bucket creating 1st"
+  Type: String
+  Default: -raj325565
+
+ bucketname2:
+  Description: "bucket creating 2nd"
+  Type: String
+  Default: 123232amal
+ 
+
+
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: raj325565
+  
+  newS3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: 123232amal
